@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/0.0.0-insiders.4a070ac/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Task</title>
+</head>
+<body class="bg-gray-100 h-screen flex flex-col justify-center items-center" style="direction:rtl;">
+
+
+  
+
+
+
+
+
+
+    <div class="task bg-white p-4 shadow-lg rounded-md border-2 border-blue-100 w-6/12 md:w-3/12">
+        <form id="task-form" class="flex flex-col ">
+            <div class="font-bold ">
+                <h6>ایجاد تسک</h6>
+            </div>
+            <div class=" my-2">
+                <input id="input-task" class="border-2 p-1 rounded-md w-full  border-blue-100" type="text" placeholder="تسک را وارد کنید">
+            </div>
+            <div class="py-2 text-sm">
+                <button id="btn-add" class="font-semibold bg-blue-400 text-white p-2 rounded-md hover:bg-blue-500 " type="submit">اضافه کردن</button>
+            </div>
+        </form>
+        <form class="flex flex-col border-t-2 border-blue-200 my-2">
+            <div class="font-bold my-2">
+                <h6>تسک ها</h6>
+            </div>
+            <div class="px-2">
+                <h6>فیلتر تسک</h6>
+            </div>
+            <div class=" my-2">
+                <input id="filter-task" class="border-2 p-1 rounded-md w-full border-blue-100" type="text" placeholder="تسک ...  ">
+            </div>
+            <div class="">
+                <ul class="px-1" id="task-list">
+                <!-- <li class="flex items-center justify-between mt-2 mb-2"><h6 class="font-semibold">تسک تستی</h6><a href=""><i class="fas fa-times text-red-600"></i></a></li>
+                -->
+                </ul>
+            </div>
+            <div class="py-2 text-sm ">
+                <button id="delete-task" class="font-semibold bg-red-400 text-white p-2 rounded-md hover:bg-red-500 " type="submit">پاک کردن همه تسک ها</button>
+            </div>
+        </form>
+
+        
+   </div>
+
+   <footer class="mt-10">
+    <div class=" bottom-10  mr-auto">
+        <div class="social-user ">
+            <div class="flex justify-center text-sm">
+            <p>محتوای این سایت متعلق به <strong class="text-blue-300"> فرهاد محجوب</strong> میباشد</p>
+
+            </div>
+            <ul class="flex justify-center ">
+
+                <li><a href="https://www.instagram.com/farhadmahjoub/" target="_blank" class="p-2 text-red-500 "><i class="fab fa-instagram "></i></a></li>
+                <li><a href="https://www.linkedin.com/in/farhad-mahjoub-9a16a71a2/" target="_blank" class="p-2 text-gray-600 "><i class="fab fa-linkedin "></i></a></li>
+                <li><a href="https://github.com/FarhadMahjoub" target="_blank" class="p-2 text-blue-500 "><i class="fab fa-github "></i></a></li>
+            </ul>
+        </div>
+
+       
+
+    </div>
+   </footer>
+
+   <script src="app.js"></script>
+
+</body>
+</html>
